@@ -1,0 +1,151 @@
+#audio-player-container {
+    --seek-before-width: 0%;
+    --volume-before-width: 100%;
+    --buffered-width: 0%;
+    position: relative;
+    width: 300px;
+    max-width: 500px;
+    /* height: 32px; */
+    background: #fff;
+}
+
+#play-icon {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0px 2.5% 10px 2.5%;
+    background-image: "C:\Users\Administrador\Desktop\matria\assets\img\play-button.svg";
+}
+
+path {
+    stroke: #00a5f4;
+}
+
+.timer {
+    font-size: 10px;
+    float: none;
+}
+
+output {
+    width: 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 2.5% 0 5%;
+    float: left;
+    clear: left;
+}
+
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    width: 70%;
+    margin-right: 5px;
+    padding: 0;
+    height: 19px;
+    margin: 10px 2.5% 0px 2.5%;
+    float: left;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+
+input[type="range"]::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: var(--seek-before-width);
+    height: 3px;
+    background-color: #00a5f4;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    border: 1px solid #00a5f4;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: -7px 0 0 0;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: #00a5f4;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #00a5f4;
+}
+
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type="range"]::-moz-range-thumb {
+    box-sizing: content-box;
+    border: 1px solid #00a5f4;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: #00a5f4;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background-color: #00a5f4;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+
+input[type="range"]::-ms-thumb {
+    box-sizing: content-box;
+    border: 1px solid #00a5f4;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="range"]:active::-ms-thumb {
+    transform: scale(1.2);
+    background: #00a5f4;
+}

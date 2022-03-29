@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversación - Malvineras</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="styles/css/audio-style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="marvel-device nexus5">
+            <div class="screen">
+                <div class="screen-container">
+
+                    <!-- STATUS BAR -->
+                    <div class="status-bar">
+                        <div class="time"></div>
+                        <div class="battery">
+                            <i class="zmdi zmdi-battery"></i>
+                        </div>
+                        <div class="network">
+                            <i class="zmdi zmdi-network"></i>
+                        </div>
+                        <div class="wifi">
+                            <i class="zmdi zmdi-wifi-alt-2"></i>
+                        </div>
+                        <div class="star">
+                            <i class="zmdi zmdi-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="chat">
+                        <div class="chat-container">
+
+                            <!-- GROUP BAR -->
+                            <div class="user-bar">
+                                <div class="back">
+                                    <i class="zmdi zmdi-arrow-left"></i>
+                                </div>
+                                <div class="avatar">
+                                    <img src="assets/img/group_avatar.jpg">
+                                </div>
+                                <div class="name">
+                                    <span>Malvineras</span>
+                                    <span class="status">toca para info. del grupo</span>
+                                </div>
+                                <div class="actions more">
+                                    <i class="zmdi zmdi-more-vert"></i>
+                                </div>
+                                <div class="actions">
+                                    <i class="zmdi zmdi-phone"></i>
+                                </div>
+                            </div>
+
+                            <!-- CONVERSATION -->
+                            <div class="conversation">
+                                <div class="conversation-container">
+
+                                    <!-- MENSAJE 01 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-1">Elma</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio01" src="assets/audio/Elma_01.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img01" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/elma_pelozo.jfif">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 02 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-2">Gonaria</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio02" src="assets/audio/Gonaria_marinero.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img02" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/gonaria_francisca.jpg">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 03 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-2">Gonaria</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio03" src="assets/audio/Gonaria_agua.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img03" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/gonaria_francisca.jpg">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 04 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-1">Elma</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio04" src="assets/audio/Elma_02.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img04" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/elma_pelozo.jfif">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 05 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-3">Delmira</span>
+                                        </div>
+                                        <span>
+                                            Con mi esposo no queríamos saber nada, pero julio no pensaba igual. Me dijo:
+                                            ¿cómo voy a sentarme frente a mis alumnos y hablarles de Belgrano o San
+                                            Martin?
+                                        </span>
+                                        <span class="metadata">
+                                            <span class="time"></span>
+                                        </span>
+                                    </div>
+
+                                    <!-- MENSAJE 06 -->
+                                    <div class="message received" style="margin-top: 0px;">
+                                        <span>
+                                            Julito amaba su patria!
+                                        </span>
+                                        <span class="metadata">
+                                            <span class="time"></span>
+                                        </span>
+                                    </div>
+
+                                    <!-- MENSAJE 07 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-2">Gonaria</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio05" src="assets/audio/Gonaria_01_B.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img05" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/gonaria_francisca.jpg">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 08 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-3">Delmira</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio06" src="assets/audio/Delmira_01.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img06" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/delmira_hasenclever.jfif">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 09 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-3">Delmira</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio07" src="assets/audio/Delmira_02_A.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img07" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/delmira_hasenclever.jfif">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 10 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-1">Elma</span>
+                                        </div>
+                                        <span>
+                                            Y bueno, yo como mamá disfruto de su foto, de los recuerdos.
+                                        </span>
+                                        <span class="metadata">
+                                            <span class="time"></span>
+                                        </span>
+                                    </div>
+
+                                    <!-- MENSAJE 11 -->
+                                    <div class="message received" style="margin-top: 0px;">
+                                        <span>
+                                            El negrito me acompaña todos los días.
+                                        </span>
+                                        <span class="metadata">
+                                            <span class="time"></span>
+                                        </span>
+                                    </div>
+
+                                    <!-- MENSAJE 12 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-3">Delmira</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio08" src="assets/audio/Delmira_03.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img08" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/delmira_hasenclever.jfif">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MENSAJE 13 -->
+                                    <div class="message received">
+                                        <div>
+                                            <span dir="auto" class="name color-2">Gonaria</span>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div id="audio-player-container" class="audio-file">
+                                                <audio id="audio09" src="assets/audio/Gonaria_01_A.mp3"
+                                                    preload="metadata"></audio>
+                                                <button id="play-icon">
+                                                    <img id="play-icon-img09" src="assets/img/play-audio-icon.svg" />
+                                                </button>
+                                                <input type="range" id="seek-slider" max="100" value="0">
+                                                <span class="metadata voice-message">
+                                                    <span class="time"></span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-pic audio-message-right">
+                                                <img src="assets/img/gonaria_francisca.jpg">
+                                                <img class="audio-message-microphone"
+                                                    src="assets/img/microphone-seen.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <form class="conversation-compose">
+                                    <div class="emoji">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="smiley"
+                                            x="3147" y="3209">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z"
+                                                fill="#7d8489" />
+                                        </svg>
+                                    </div>
+                                    <input class="input-msg" name="input" placeholder="Escribe un mensaje"
+                                        autocomplete="off" autofocus></input>
+                                    <div class="photo attachment">
+                                        <i class="zmdi zmdi-attachment-alt"></i>
+                                    </div>
+                                    <div class="photo photo-message">
+                                        <i class="zmdi zmdi-camera"></i>
+                                    </div>
+                                    <button class="send">
+                                        <div class="circle">
+                                            <i class="zmdi zmdi-mail-send"></i>
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="js/rendered.js"></script>
+<script src="js/audio-player.js"></script>
+<script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+</html>
